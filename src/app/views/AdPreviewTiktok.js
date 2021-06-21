@@ -54,7 +54,7 @@ class AdPreviewTiktok extends Component {
                                         {/* Card */}
                                         <div className="z-depth-1 card-content">
 
-                                            
+
                                         </div>
                                         {/* End - Card */}
 
