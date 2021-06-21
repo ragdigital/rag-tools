@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+:root {
+    --z-depth-1: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    --font-family: 'Roboto', sans-serif;
+}
+
+* {
+    font-family: var(--font-family);
+}
+
+.z-depth-1 {
+    -webkit-box-shadow: var(--z-depth-1);
+    box-shadow: var(--z-depth-1);
+}
+.txt-shadow {
+    text-shadow: 1px 0 2px rgba(0, 0, 0, 1);
+}
+
+.card-facebook {
+    background-color: #4267B2;
+    color: #ffffff;
+    border-radius: 4px;
+    box-shadow: var(--z-depth-1);
+}
+.card-instagram {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    color: #ffffff;
+    border-radius: 4px;
+    box-shadow: var(--z-depth-1);
+}
+.card-linkedin {
+    background-color: #2867B2;
+    color: #ffffff;
+    border-radius: 4px;
+    box-shadow: var(--z-depth-1);
+}
+.card-twitter {
+    background-color: #1DA1F2;
+    color: #ffffff;
+    border-radius: 4px;
+    box-shadow: var(--z-depth-1);
+}
+.card-google {
+    background-color: #DB4437;
+    color: #ffffff;
+    border-radius: 4px;
+    box-shadow: var(--z-depth-1);
+}
+.card-snapchat {
+    background-color: #FFFC00;
+    color: #000000;
+    border-radius: 4px;
+    box-shadow: var(--z-depth-1);
+}
+.card-tiktok {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 4px;
+    box-shadow: var(--z-depth-1);
+}
+
+.container3 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.container4 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.img-ajust {
+    height: auto;
+    width: 100%;
+}
+
+.btn-select::-ms-expand {
+    display: none;
+}
+.btn-select{
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+    bottom: 30px;
+    right: 15px;
+}
+.card-content:hover .btn-select{
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+
+.card-content {
+    transition: all 0.3s;
+}
+.card-content:hover .card-header input {
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+.card-content .card-header input {
+    outline: 0;
+    width: 100%;
+    padding: 0;
+    transition: all 0.3s;
+    border-color: transparent;
+    border-style: dashed;
+    border-width: 1px;
+}
+.card-content .card-header input:focus {
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+.card-content .card-header input::placeholder {
+    color: #4267B2;
+    font-weight: 500;
+}
+
+.card-content input[type="file"] {
+    display: none;
+}
+.card-content .user-block label{
+}
+.user-block label {
+    float: left;
+}
+.user-block .icon-img {
+    position: absolute;
+    font-size: 18px;
+    padding: 10px;
+    padding-bottom: 12px;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 2px dashed transparent;
+}
+.card-content:hover .icon-img {
+    opacity: 1;
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px;
+    padding-right: 7px;
+    padding-bottom: 10px;
+    font-weight: 300;
+    cursor: pointer;
+    border: 2px dashed #ffffff;
+}
+
+.card-content:hover textarea {
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+.card-content textarea {
+    outline: 0;
+    width: 100%;
+    padding: 0;
+    transition: all 0.3s;
+    border-color: transparent;
+    border-style: dashed;
+    border-width: 1px;
+}
+.card-content textarea:focus {
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+.card-content textarea::placeholder {
+    color: #0a0e14;
+    font-weight: 300;
+}
+
+.card-content .icon-content .icon-img {
+    position: absolute;
+    left: 45%;
+    top: 35%;
+    font-size: 30px;
+    padding: 15px;
+    transition: all 0.3s;
+    border: 2px dashed #ffffff;
+    font-weight: 300;
+    opacity: 0;
+}
+.card-content:hover .icon-content {
+    cursor: pointer;
+}
+.card-content:hover .icon-content .icon-img {
+    opacity: 1;
+}
+
+.card-content:hover .linkPage {
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+.card-content .linkPage {
+    outline: 0;
+    padding: 0;
+    transition: all 0.3s;
+    border-color: transparent;
+    border-style: dashed;
+    border-width: 1px;
+    background-color: transparent;
+    width: 75%;
+}
+.card-content .linkPage:focus {
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+.card-content .linkPage::placeholder {
+    color: #0a0e14;
+    font-weight: 300;
+}
+
+.card-content:hover .titlePage {
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+.card-content .titlePage {
+    outline: 0;
+    padding: 0;
+    transition: all 0.3s;
+    border-color: transparent;
+    border-style: dashed;
+    border-width: 1px;
+    background-color: transparent;
+    width: 75%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-content .titlePage:focus {
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+.card-content .titlePage::placeholder {
+    color: #0a0e14;
+    font-weight: 400;
+}
+
+.card-content:hover .titleDescription {
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+.card-content .titleDescription {
+    outline: 0;
+    padding: 0;
+    transition: all 0.3s;
+    border-color: transparent;
+    border-style: dashed;
+    border-width: 1px;
+    background-color: transparent;
+    width: 75%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-content .titleDescription:focus {
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+.card-content .titleDescription::placeholder {
+    color: #0a0e14;
+    font-weight: 400;
+}
