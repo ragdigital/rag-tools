@@ -36,7 +36,7 @@ class Select extends React.Component {
         let foundItem;
         (items || []).map((item) => {
             if (item.value === value) {
-                foundItem = item;
+                return foundItem = item;
             }
         });
         return foundItem;
