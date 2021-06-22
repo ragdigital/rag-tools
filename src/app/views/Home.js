@@ -34,24 +34,25 @@ class Home extends Component {
 
                         <div className="row">
                             {AdPreviewList.map(toolCard =>
-                                <div key={toolCard.id} className="col-sm-4 col-md-6 col-lg-4 mb-3">
-                                    <Link to={"/"+toolCard.link}>
-                                        <div className={"position-relative p-3 "+toolCard.cardClass} style={{height:'130px'}}>
-                                            <div className="ribbon-wrapper ribbon-lg">
-                                                <div className="ribbon bg-white text-lg shadow">
-                                                    {toolCard.socialTitle}
+                                toolCard.show ?
+                                    <div key={toolCard.id} className="col-sm-4 col-md-6 col-lg-4 mb-3">
+                                        <Link to={"/"+toolCard.link}>
+                                            <div className={"position-relative p-3 "+toolCard.cardClass} style={{height:'130px'}}>
+                                                <div className="ribbon-wrapper ribbon-lg">
+                                                    <div className="ribbon bg-white text-lg shadow">
+                                                        {toolCard.socialTitle}
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <div style={{width:'95%'}}>
-                                                {toolCard.title}
-                                                <hr className="bg-white z-depth-1 my-2"/>
-                                                <small>{toolCard.description}</small>
-                                            </div>
+                                                <div style={{width:'95%'}}>
+                                                    {toolCard.title}
+                                                    <hr className="bg-white z-depth-1 my-2"/>
+                                                    <small>{toolCard.description}</small>
+                                                </div>
 
-                                        </div>
-                                    </Link>
-                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>:null
                             )}
                         </div>
 

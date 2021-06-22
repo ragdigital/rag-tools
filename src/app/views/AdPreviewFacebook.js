@@ -5,12 +5,10 @@ import * as GoIcons from 'react-icons/go';
 import * as FaIcons from 'react-icons/fa';
 import * as BiIcons from 'react-icons/bi';
 import * as TiIcons from 'react-icons/ti';
-import * as MdIcons from 'react-icons/md';
 
 import logoFace from '../../assets/images/logo-facebook.png';
 import bgDefault from '../../assets/images/bg-default.jpg';
 
-import DisplayDevicesList from "../data/DisplayDevicesList";
 import AdPreviewList from "../data/AdPreviewList";
 
 class AdPreviewFacebook extends Component {
@@ -107,16 +105,8 @@ class AdPreviewFacebook extends Component {
 
     render() {
         const {
-            activeDevice,logoPreviewUrl,imagePreviewUrl
+            logoPreviewUrl,imagePreviewUrl
         } = this.state;
-
-        let $classBtn = null;
-        if (activeDevice===true) {
-            $classBtn = 'btn-danger';
-        }
-        else {
-            $classBtn = 'btn-success';
-        }
 
         return (
             <div className="content-wrapper">
@@ -154,33 +144,10 @@ class AdPreviewFacebook extends Component {
                         </div>
 
                         <div className="row">
-                            <div className="col-md-3 d-none">
-                                <div className="container3">
-                                    <button onClick={this.handleClick} className={"btn btn-block btn-sm mb-3 "+$classBtn}>
-                                        {activeDevice ?
-                                            <span><GoIcons.GoEyeClosed size={'22px'} /> <br/> Disable Display Devices</span> :
-                                            <span><MdIcons.MdDevices size={'22px'} /> <br/> Enable Display Devices</span>
-                                        }
-                                    </button>
-
-                                    <div className="d-none d-md-block">
-                                        {DisplayDevicesList.map(device =>
-                                            <div className="form-check" key={device.id}>
-                                                <input className="form-check-input" type="radio" name="deviceName" disabled={activeDevice===false}
-                                                       id={"exampleRadios"+device.id} onChange={this.handleChange} value={device.name} />
-                                                <label className="form-check-label" htmlFor={"exampleRadios"+device.id}>
-                                                    {device.name}
-                                                </label>
-                                            </div>
-                                        )}
-                                    </div>
-
-                                </div>
-                            </div>
 
                             <div className="col-md-9 mx-auto">
                                 <div className="container4 bg-transparent">
-                                    <div className="card direct-chat shadow-none bg-transparent mx-auto" style={{width:'500px'}}>
+                                    <div className="card direct-chat shadow-none bg-transparent mx-auto card-facebook" style={{width:'500px'}}>
                                         <div className="card-header pr-1 border-0 d-none">
                                             <div className="card-tools">
                                                 <button type="button" className="btn btn-tool" title="Options" data-widget="chat-pane-toggle">

@@ -52,7 +52,7 @@ const AdPreviewList = [
         description: 'Design your own Ad. Embellish them with ad extensions like links, call out, ratings, and so on.',
         link:'ad-preview-google',
         icon: <GrIcons.GrGoogle size="20px" />,
-        show: false
+        show: true
     },
     {
         id: 6,

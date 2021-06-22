@@ -101,12 +101,12 @@
 .card-content {
     transition: all 0.3s;
 }
-.card-content:hover .card-header input {
+.card-facebook .card-content:hover .card-header input {
     border-color: #6c757d;
     border-style: dashed;
     border-width: 1px;
 }
-.card-content .card-header input {
+.card-facebook .card-content .card-header input {
     outline: 0;
     width: 100%;
     padding: 0;
@@ -115,12 +115,12 @@
     border-style: dashed;
     border-width: 1px;
 }
-.card-content .card-header input:focus {
+.card-facebook .card-content .card-header input:focus {
     border-color: #6c757d;
     border-style: dashed;
     border-width: 1px;
 }
-.card-content .card-header input::placeholder {
+.card-facebook .card-content .card-header input::placeholder {
     color: #4267B2;
     font-weight: 500;
 }
@@ -154,12 +154,12 @@
     border: 2px dashed #ffffff;
 }
 
-.card-content:hover textarea {
+.card-facebook .card-content:hover textarea {
     border-color: #6c757d;
     border-style: dashed;
     border-width: 1px;
 }
-.card-content textarea {
+.card-facebook .card-content textarea {
     outline: 0;
     width: 100%;
     padding: 0;
@@ -168,12 +168,12 @@
     border-style: dashed;
     border-width: 1px;
 }
-.card-content textarea:focus {
+.card-facebook .card-content textarea:focus {
     border-color: #6c757d;
     border-style: dashed;
     border-width: 1px;
 }
-.card-content textarea::placeholder {
+.card-facebook .card-content textarea::placeholder {
     color: #0a0e14;
     font-weight: 300;
 }
@@ -274,5 +274,259 @@
 }
 .card-content .titleDescription::placeholder {
     color: #0a0e14;
+    font-weight: 400;
+}
+
+.card-tiktok .icon-img {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    opacity: 0;
+    transition: all 0.3s;
+    font-weight: 300;
+}
+.card-tiktok:hover .icon-img {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    opacity: 1;
+    background-color: rgba(0,0,0,0.6);
+}
+
+
+.card-tiktok:hover .username {
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+.card-tiktok .username {
+    outline: 0;
+    padding: 0;
+    transition: all 0.3s;
+    border-color: transparent;
+    border-style: dashed;
+    border-width: 1px;
+    background-color: transparent;
+
+    position: absolute;
+    bottom: 29.2%;
+    left: 5%;
+    width: 90px;
+
+}
+.card-tiktok .username:focus {
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+.card-tiktok .username::placeholder {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.card-tiktok .time {
+    outline: 0;
+    padding: 0;
+    transition: all 0.3s;
+    border-color: transparent;
+    border-style: dashed;
+    border-width: 1px;
+    background-color: transparent;
+
+    position: absolute;
+    bottom: 29.2%;
+    left: 33%;
+    width: 70px;
+
+}
+.card-tiktok:hover .time {
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+.card-tiktok .time:focus {
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+.card-tiktok .time::placeholder {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.card-tiktok .description {
+    outline: 0;
+    padding: 0;
+    transition: all 0.3s;
+    border-color: transparent;
+    border-style: dashed;
+    border-width: 1px;
+    background-color: transparent;
+
+    position: absolute;
+    bottom: 26.5%;
+    left: 5%;
+    width: 200px;
+
+}
+.card-tiktok:hover .description {
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+.card-tiktok .description:focus {
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+.card-tiktok .description::placeholder {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.card-tiktok .hashtags {
+    outline: 0;
+    padding: 0;
+    transition: all 0.3s;
+    border-color: transparent;
+    border-style: dashed;
+    border-width: 1px;
+    background-color: transparent;
+    font-size: 12px;
+    position: absolute;
+    bottom: 24%;
+    left: 5%;
+    width: 200px;
+}
+.card-tiktok:hover .hashtags {
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+.card-tiktok .hashtags:focus {
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+.card-tiktok .hashtags::placeholder {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.card-tiktok .link-translation {
+    outline: 0;
+    padding: 0;
+    transition: all 0.3s;
+    border-color: transparent;
+    border-style: dashed;
+    border-width: 1px;
+    background-color: transparent;
+    font-size: 11px;
+    position: absolute;
+    bottom: 21.5%;
+    left: 5%;
+    width: 200px;
+}
+.card-tiktok .txt-original {
+    outline: 0;
+    padding: 0;
+    transition: all 0.3s;
+    border-color: transparent;
+    border-style: dashed;
+    border-width: 1px;
+    background-color: transparent;
+
+    position: absolute;
+    bottom: 18.3%;
+    left: 5%;
+    width: 200px;
+}
+
+.card-tiktok .icon-img-bg {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    opacity: 0;
+    transition: all 0.3s;
+    font-weight: 300;
+    border: 2px dashed #ffffff;
+    font-size: 23px;
+    padding: 10px;
+    cursor: pointer;
+}
+.card-tiktok:hover .icon-img-bg {
+    position: absolute;
+    opacity: 1;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.bg-tiktok {
+    background-image: url("../assets/images/img-footer-tiktok.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+
+.google-card .card-content input {
+
+}
+
+.google-card .headline {
+    outline: 0;
+    padding: 0;
+    border-color: transparent;
+    border-style: dashed;
+    border-width: 1px;
+    background-color: transparent;
+    font-size: 19px;
+    min-width:90px !important;
+    max-width:280px !important;
+    transition: all 0.3s;
+}
+.google-card:hover .headline {
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+.google-card .headline:focus {
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+.google-card .headline::placeholder {
+    color: #4267B2;
+    font-weight: 400;
+}
+
+.google-card .icon-img {
+    position: absolute;
+    opacity: 0;
+    font-size: 10px;
+    padding: 5px !important;
+    transition: all 0.3s;
+}
+
+.google-card .pathPage {
+    outline: 0;
+    padding: 0;
+    transition: all 0.3s;
+    border-color: transparent;
+    border-style: dashed;
+    border-width: 1px;
+    background-color: transparent;
+    width: 51%;
+}
+.google-card:hover .pathPage {
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+.google-card .pathPage:focus {
+    border-color: #6c757d;
+    border-style: dashed;
+    border-width: 1px;
+}
+.google-card .pathPage::placeholder {
+    color: #4267B2;
     font-weight: 400;
 }

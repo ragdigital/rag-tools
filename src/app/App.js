@@ -6,6 +6,7 @@ import Footer from "./includes/Footer";
 import Home from "./views/Home";
 import AdPreviewFacebook from "./views/AdPreviewFacebook";
 import AdPreviewTiktok from "./views/AdPreviewTiktok";
+import AdPreviewGoogle from "./views/AdPreviewGoogle";
 
 class App extends Component {
     render() {
@@ -17,6 +18,7 @@ class App extends Component {
                     <Route exact path={"/"} component={Home} />
                     <Route exact path={"/ad-preview-facebook"} component={AdPreviewFacebook} />
                     <Route exact path={"/ad-preview-tiktok"} component={AdPreviewTiktok} />
+                    <Route exact path={"/ad-preview-google"} component={AdPreviewGoogle} />
                 </Switch>
 
                 <Footer />
