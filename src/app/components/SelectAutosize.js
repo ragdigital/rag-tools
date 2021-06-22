@@ -1,8 +1,5 @@
 import React from "react";
 
-const styles = {
-    fontFamily: "sans-serif",
-};
 const Options = [
     { value: "Brands", label: "Brands" },
     { value: "Amenities", label: "Amenities" },
@@ -37,7 +34,7 @@ class Select extends React.Component {
     };
     findOption = (items, value) => {
         let foundItem;
-        (items || []).map((item, index) => {
+        (items || []).map((item) => {
             if (item.value === value) {
                 foundItem = item;
             }
